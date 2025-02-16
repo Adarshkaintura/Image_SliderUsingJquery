@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragons Images Slider</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="music/Enemy-(Mr-Jat.in).mp3" type="audio/mp3">
+        
+    </audio>
+    
+    <div id="container">
+        <h1>Dragons</h1>
+        <div class="slider">
+            <div><img src="images/1243048-dragon-phone-wallpaper-1920x1080-for-mac.jpg" width="640" height="426"></div>
+            <div><img src="images/414808.jpg" width="640" height="426"></div>
+            <div><img src="images/img1.jpg" width="640" height="426"></div>
+            <div><img src="images/img2.jpg" width="640" height="426"></div>
+            <div><img src="images/img3.jpg" width="640" height="426"></div>
+            <div><img src="images/img4.jpg" width="640" height="426"></div>
+            <div><img src="images/img5.jpg" width="640" height="426"></div>
+            <div><img src="images/img6.jpg" width="640" height="426"></div>
+
+        </div>
+        <ul class="nav">
+            <li class="prev"><a href="#">Previous</a></li>
+            <li class="next"><a href="#">Next</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').cycle({
+                fx: 'fade',
+                pause: 1,
+                prev: '.prev a',
+                next: '.next a'
+            });
+        });
+    </script>
+</body>
+</html>
